@@ -69,13 +69,15 @@ jquery_3_5_1 = script_ [
     src_ "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
   , integrity_ "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
   , crossorigin_ "anonymous"] _blank
-  
+
+-- | MathJax V3.0.5
 mathjax_3_0_5 :: Monad m => HtmlT m ()
 mathjax_3_0_5 = script_ [
     src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.5/es5/startup.js"
   , integrity_ "sha512-dJKCcxAEzVvIi89TXFlYagyMEEOhxtHqSorUk77kh+ss/XeVker5KA/O5/eRn5ri1S83ID4l2SS292jQjY0PCQ=="
   , crossorigin_ "anonymous"] _blank
-   
+
+-- | Popper V2.4.4
 popper_2_4_4 :: Monad m => HtmlT m ()
 popper_2_4_4 = script_ [
     src_ "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"
