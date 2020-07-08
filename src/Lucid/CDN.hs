@@ -43,7 +43,7 @@ bootstrapJS_5_0_0_alpha1 :: Monad m => HtmlT m ()
 bootstrapJS_5_0_0_alpha1 = script_ [
     src_ "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
   , integrity_ "sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-  , crossorigin_ "anonymous"] $ _blank
+  , crossorigin_ "anonymous"] _blank
 
 -- | FontAwesome v4.7.0
 fontawesome_4_7_0 :: Monad m => HtmlT m ()
@@ -58,7 +58,7 @@ jquery_3_5_1 :: Monad m => HtmlT m ()
 jquery_3_5_1 = script_ [
     src_ "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
   , integrity_ "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-  , crossorigin_ "anonymous"] $ _blank
+  , crossorigin_ "anonymous"] _blank
   
 mathjax_3_0_5 :: Monad m => HtmlT m ()
 mathjax_3_0_5 = script_ [
@@ -71,4 +71,3 @@ popper_2_4_4 = script_ [
     src_ "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"
   , integrity_ "sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
   , crossorigin_ "anonymous"] _blank
-  
