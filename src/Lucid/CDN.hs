@@ -22,6 +22,7 @@ module Lucid.CDN (
 
 import Lucid
 
+_blank :: Html ()
 _blank = toHtml ("" :: String)
 
 -- | Bootstrap CSS v4.5.0
