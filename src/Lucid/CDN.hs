@@ -73,8 +73,8 @@ jquery_3_5_1 = script_ [
 -- | MathJax V3.0.5
 mathjax_3_0_5 :: Monad m => HtmlT m ()
 mathjax_3_0_5 = script_ [
-    src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.5/es5/startup.js"
-  , integrity_ "sha512-dJKCcxAEzVvIi89TXFlYagyMEEOhxtHqSorUk77kh+ss/XeVker5KA/O5/eRn5ri1S83ID4l2SS292jQjY0PCQ=="
+    src_ "https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js"
+  , integrity_ "sha384-L+g9M+CMLhBJNIlTx7C1IQRQV7IL/wRmGNxXVP6CPEJjVhE5LE1EBMVJtmmdueyg"
   , crossorigin_ "anonymous"] _blank
 
 -- | Popper V2.4.4
