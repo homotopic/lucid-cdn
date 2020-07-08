@@ -1,0 +1,30 @@
+name:                lucid-cdn
+version:             0.1.0.0
+git:                 https://gitlab.com/homotopic-tech/lucid-cdn
+license:             BSD3
+author:              "Daniel Firth"
+maintainer:          "dan.firth@homotopic.tech"
+copyright:           "2020 Daniel Firth"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            Curated list of CDN imports for lucid.
+category:            Web
+
+description:         Repository of common CDN imports for lucid. Please open a pull request to add new libraries.
+
+dependencies:
+- base >= 4.7 && < 5
+- lucid
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
