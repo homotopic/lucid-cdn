@@ -1,5 +1,14 @@
-{-# LANGUAGE OverloadedStrings #-}
+{-|
+  Module     : Lucid.CDN
+  Copyright  : Copyright (C) 2020 Daniel Firth
+  Maintaine  : Daniel Firth <dan.firth@homotopic.tech>
+  License    : MIT
+  Stability  : experimental
+
+Curated list of CDN imports for use with Lucid.
+-}
 {-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Lucid.CDN (
   bootstrapCSS_4_5_0
 , bootstrapJS_4_5_0
