@@ -5,14 +5,14 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:           lucid-cdn
-version:        0.1.0.1
+version:        0.1.1.0
 synopsis:       Curated list of CDN imports for lucid.
 description:    Repository of common CDN imports for lucid. Please open a pull request to add new libraries.
 category:       Web
 author:         Daniel Firth
 maintainer:     dan.firth@homotopic.tech
 copyright:      2020 Daniel Firth
-license:        BSD3
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:

@@ -1,7 +1,5 @@
 {-|
   Module     : Lucid.CDN
-  Copyright  : Copyright (C) 2020 Daniel Firth
-  Maintaine  : Daniel Firth <dan.firth@homotopic.tech>
   License    : MIT
   Stability  : experimental
 
@@ -44,7 +42,7 @@ bootstrapJS_4_5_0 = script_ [
 bootstrapCSS_5_0_0_alpha1 :: Monad m => HtmlT m ()
 bootstrapCSS_5_0_0_alpha1 = link_ [
     rel_ "stylesheet"
-  , href_ "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" 
+  , href_ "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
   , integrity_ "sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
   , crossorigin_ "anonymous"]
 
@@ -64,7 +62,7 @@ fontawesome_4_7_0 = link_ [
   , crossorigin_ "anonymous" ]
 
 -- | JQuery V3.5.1
-jquery_3_5_1 :: Monad m => HtmlT m ()  
+jquery_3_5_1 :: Monad m => HtmlT m ()
 jquery_3_5_1 = script_ [
     src_ "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
   , integrity_ "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
