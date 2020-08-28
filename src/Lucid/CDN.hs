@@ -8,13 +8,13 @@ Curated list of CDN imports for use with Lucid.
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Lucid.CDN (
-  bootstrapCSS_4_5_0
-, bootstrapJS_4_5_0
+  bootstrapCSS_4_5_2
+, bootstrapJS_4_5_2
 , bootstrapCSS_5_0_0_alpha1
 , bootstrapJS_5_0_0_alpha1
 , fontawesome_4_7_0
 , jquery_3_5_1
-, mathjax_3_0_5
+, mathjax_3_1_0
 , popper_2_4_4
 ) where
 
@@ -23,19 +23,19 @@ import Lucid
 _blank :: Html ()
 _blank = toHtml ("" :: String)
 
--- | Bootstrap CSS v4.5.0
-bootstrapCSS_4_5_0 :: Monad m => HtmlT m ()
-bootstrapCSS_4_5_0 = link_ [
+-- | Bootstrap CSS v4.5.2
+bootstrapCSS_4_5_2 :: Monad m => HtmlT m ()
+bootstrapCSS_4_5_2 = link_ [
     rel_ "stylesheet"
-  , href_ "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-  , integrity_ "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  , href_ "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  , integrity_ "sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
   , crossorigin_ "anonymous" ]
 
--- | Bootstrap JS v4.5.0
-bootstrapJS_4_5_0 :: Monad m => HtmlT m ()
-bootstrapJS_4_5_0 = script_ [
-    src_ "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-  , integrity_ "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+-- | Bootstrap JS v4.5.2
+bootstrapJS_4_5_2 :: Monad m => HtmlT m ()
+bootstrapJS_4_5_2 = script_ [
+    src_ "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  , integrity_ "sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
   , crossorigin_ "anonymous" ] _blank
 
 -- | Bootstrap CSS v5.0.0
@@ -68,11 +68,11 @@ jquery_3_5_1 = script_ [
   , integrity_ "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
   , crossorigin_ "anonymous"] _blank
 
--- | MathJax V3.0.5
-mathjax_3_0_5 :: Monad m => HtmlT m ()
-mathjax_3_0_5 = script_ [
+-- | MathJax V3.1.0
+mathjax_3_1_0 :: Monad m => HtmlT m ()
+mathjax_3_1_0 = script_ [
     src_ "https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js"
-  , integrity_ "sha384-L+g9M+CMLhBJNIlTx7C1IQRQV7IL/wRmGNxXVP6CPEJjVhE5LE1EBMVJtmmdueyg"
+  , integrity_ "sha384-ynpCZozLxgqK3wrgBu8qH8qPG3eD8mME8z0zugAX26UMb5HfLp2PtvtDH4vdmgkm"
   , crossorigin_ "anonymous"] _blank
 
 -- | Popper V2.4.4

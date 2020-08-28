@@ -1,6 +1,15 @@
 # Changelog for lucid-cdn
 
-## (v0.1.0.0)
+## v0.2.0.0
+
+* Update bootstrap4 to v4.5.2
+* Update mathjax to v3.1.0
+
+## v0.1.1.0
+
+* Fix mathjax resolver
+
+## v0.1.0.0
 
 * Add bootstrap CSS and JS v.4.5.0.
 * Add bootstrap CSS and JS v5.0.0-alpha1.
