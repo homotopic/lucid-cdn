@@ -71,7 +71,7 @@ jquery_3_5_1 = script_ [
 -- | MathJax V3.1.0
 mathjax_3_1_0 :: Monad m => HtmlT m ()
 mathjax_3_1_0 = script_ [
-    src_ "https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js"
+    src_ "https://cdn.jsdelivr.net/npm/mathjax@3.1.0/es5/tex-mml-chtml.js"
   , integrity_ "sha384-ynpCZozLxgqK3wrgBu8qH8qPG3eD8mME8z0zugAX26UMb5HfLp2PtvtDH4vdmgkm"
   , crossorigin_ "anonymous"] _blank
 
