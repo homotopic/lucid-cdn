@@ -1,5 +1,10 @@
 # Changelog for lucid-cdn
 
+## v0.2.1.0
+
+* Add modernizr v2.8.3
+* Add sudoslider v3.5.0
+
 ## v0.2.0.0
 
 * Update bootstrap4 to v4.5.2

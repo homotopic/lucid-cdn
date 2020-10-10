@@ -15,7 +15,9 @@ module Lucid.CDN (
 , fontawesome_4_7_0
 , jquery_3_5_1
 , mathjax_3_1_0
+, modernizr_2_8_3
 , popper_2_4_4
+, sudoslider_3_5_0
 ) where
 
 import Lucid
@@ -75,9 +77,23 @@ mathjax_3_1_0 = script_ [
   , integrity_ "sha384-ynpCZozLxgqK3wrgBu8qH8qPG3eD8mME8z0zugAX26UMb5HfLp2PtvtDH4vdmgkm"
   , crossorigin_ "anonymous"] _blank
 
+-- | Modernizr V2.8.3
+modernizr_2_8_3 :: Monad m => HtmlT m ()
+modernizr_2_8_3 = script_ [
+    src_ "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+  , integrity_ "sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw=="
+  , crossorigin_ "anonymous"] _blank
+
 -- | Popper V2.4.4
 popper_2_4_4 :: Monad m => HtmlT m ()
 popper_2_4_4 = script_ [
     src_ "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"
   , integrity_ "sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
+  , crossorigin_ "anonymous"] _blank
+
+-- SudoSlider V3.5.0
+sudoslider_3_5_0 :: Monad m => HtmlT m ()
+sudoslider_3_5_0 = script_ [
+    src_ "https://cdn.jsdelivr.net/npm/sudoslider@3.5.0/js/jquery.sudoSlider.min.js"
+  , integrity_ "sha256-jhgyTeC6IL/fR5R777vflEtlTg9lkxcPjfTVKC0AK2c="
   , crossorigin_ "anonymous"] _blank
