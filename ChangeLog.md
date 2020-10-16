@@ -1,5 +1,9 @@
 # Changelog for lucid-cdn
 
+## v0.2.2.0
+
+* Add tailwind v1.9.2
+
 ## v0.2.1.0
 
 * Add modernizr v2.8.3

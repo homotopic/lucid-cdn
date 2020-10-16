@@ -18,6 +18,7 @@ module Lucid.CDN (
 , modernizr_2_8_3
 , popper_2_4_4
 , sudoslider_3_5_0
+, tailwind_1_9_2
 ) where
 
 import Lucid
@@ -97,3 +98,11 @@ sudoslider_3_5_0 = script_ [
     src_ "https://cdn.jsdelivr.net/npm/sudoslider@3.5.0/js/jquery.sudoSlider.min.js"
   , integrity_ "sha256-jhgyTeC6IL/fR5R777vflEtlTg9lkxcPjfTVKC0AK2c="
   , crossorigin_ "anonymous"] _blank
+
+-- Tailwind V1.9.2
+tailwind_1_9_2 :: Monad m => HtmlT m ()
+tailwind_1_9_2 = link_ [
+    rel_ "stylesheet"
+  , src_ "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css"
+  , integrity_ "sha512-l7qZAq1JcXdHei6h2z8h8sMe3NbMrmowhOl+QkP3UhifPpCW2MC4M0i26Y8wYpbz1xD9t61MLT9L1N773dzlOA=="
+  , crossorigin_ "anonymous"]
